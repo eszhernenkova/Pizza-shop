@@ -1,14 +1,12 @@
-:root {
-    --font: 'Source Sans 3', serif;
-    --primary-color: #FE724C;
-    --primary-hover-color: #df6442;
-    --text-color: #000000;
-    --text-secondary-color: #5B5B5E;
-    --white-color: #FFFFFF;
-    --separetor-color: #D4D6E0;
-}
+$font: 'Source Sans 3', serif;
+$primary-color: #FE724C;
+$primary-hover-color: #df6442;
+$text-color: #000000;
+$text-secondary-color: #5B5B5E;
+$white-color: #FFFFFF;
+$separator-color: #D4D6E0;
 
 body {
-    font-family: 'Source Sans 3', serif;
+    font-family: $font;
     margin: 0;
 }

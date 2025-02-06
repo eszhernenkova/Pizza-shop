@@ -1,5 +1,7 @@
+@use '../../index.scss' as *;
+
 .title{
-    color: var(--text-color);
+    color: $text-color;
     font-size: 36px;
     margin: 0;
     font-weight: 400;
