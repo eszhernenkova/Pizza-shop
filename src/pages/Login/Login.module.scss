@@ -7,6 +7,12 @@
     width: 100%;
     max-width: 500px;
 
+    .error{
+        background: #FFC529;
+        color: $white-color;
+        padding: 20px;
+    }
+
     .form{
         display: flex;
         flex-direction: column;
