@@ -14,6 +14,7 @@ import Register from './pages/Register/Register.tsx';
 import { RequireAuth } from './helpers/RequireAuth.tsx';
 import { Provider } from 'react-redux';
 import { store } from './store/store.ts';
+import Success from './pages/Success/Success.tsx';
 
 
 const Menu = lazy(()=> import('./pages/Menu/Menu'));
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
 				element: <Suspense fallback={<>Загрузка...</>} ><Menu/></Suspense> 
 			},
 			{
+				path: '/success',
+				element: <Success />
+			},
+			{
 				path: '/cart',
 				element: <Cart/>
 			},
@@ -36,11 +41,6 @@ const router = createBrowserRouter([
 				element: <Product />,
 				errorElement: <>Ошибка</>,
 				loader: async ({ params }) => {
-					// await new Promise<void>((resolve) => {
-					// 	setTimeout(()=>{
-					// 		resolve();
-					// 	}, 2000);
-					// });
 					const { data } = await axios.get(`${PREFIX}/products/${params.id}`);
 					return data;
 				}
