@@ -1,0 +1,108 @@
+@use '../../index.scss' as *;
+
+
+.wrapper{
+    width: 80%;
+
+    .head{
+        display: flex;
+        align-items: center;
+
+        .title{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: 0%;
+            margin-left: 36px;
+        }
+        
+        .add-to-cart{
+            margin-left: auto;
+            img {
+                margin-right: 14px;
+            }
+        }
+
+        .toggle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 5px;
+            padding: 10px;
+            border: none;
+            background: none;
+            box-shadow: 5px 10px 20px 0 rgba(168, 165, 165, 0.3);
+            cursor: pointer;
+        }
+    }
+    
+    .content{
+        display: flex;
+        margin-top: 42px;
+
+        .image{
+            width: 323px;
+            height: auto;
+
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                object-position: center;
+                
+            }
+        }
+
+        .description{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 40px;
+            width: 298px;
+
+            .hr{
+                max-width: 512px;
+                margin: 0;
+                border: 1px solid #F1F2F3;
+            }
+
+            .price{ 
+                display: flex;
+                gap: 20px;
+                max-width: 512px;
+                justify-content: space-between;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 22px;
+
+            }
+
+            .rating{
+                display: flex;
+                gap: 20px;
+                max-width: 512px;
+                justify-content: space-between;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 22px;
+
+                span{
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    box-shadow: 0px 6.07px 24.29px 0 rgba(254, 114, 76, 0.2);
+
+                }
+            }
+
+            .ingridients{
+                color: $text-secondary-color;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}
